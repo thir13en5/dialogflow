@@ -1,6 +1,7 @@
+//Index.js
 var express = require('express');
 var app = express();
-app.listen(4000,()=>{ console.log('Node Running') });
+app.listen(process.env.PORT || 4000,()=>{ console.log('Node Running') });
 app.post('/',function(req,res){
     var resp = {
         "Request Type":"POST",
